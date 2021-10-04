@@ -4,7 +4,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
-import "image.css";
+// import "image.css";
+import thinking from "./Images/thinking.jpg";
 
 export default function MediaCard() {
   return (
@@ -14,7 +15,7 @@ export default function MediaCard() {
           component="img"
           height="140"
           img
-          src="Thinking"
+          src={thinking}
           alt="people thinking"
         />
         <CardContent>
