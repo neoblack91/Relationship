@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import MediaCard from './component/Card';
+// import GoalCard from './component/Pages/Goal';
+import MediaCard from './component/Pages/Home';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     //   </header>
     // </div>
     <MediaCard />
+    // <GoalCard />
   );
 }
 
