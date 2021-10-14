@@ -1,58 +1,77 @@
-import * as React from "react";
+import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
-// import "image.css";
+import { Container, TableRow } from "@mui/material";
+// import "../../image.css";
 import thinking from "../Images/thinking.jpg";
-// import DollarPhoto from "../Images/DollarPhoto.jpg";
+import heart from "../Images/heart.jpg";
+// import Link  from "react-router-dom";
+import DollarPhoto from "../Images/DollarPhoto.jpg";
 // import BreakUp from "../Images/how-to-break-up.jpg"
 // import Dating from "../Images/dating.jpg"
 // import Couples from "../Images/couples.jpg"
 // import Love from "../Images/Kingdom_hearts.png"
 
-
 export default function MediaCard() {
   return (
-    <CardActionArea>
+    <div
+      className="landing-wrapper"
+      style={{ backgroundImage: `url (${heart})` }}
+    >
+      <Container>
+        <TableRow>
+          <CardActionArea onclick="/PrepareCard">
+            {/* card 1 */}
+            <Card sx={{ maxWidth: 200 }}>
+              <CardMedia
+                component="img"
+                height="140"
+                img
+                src={thinking}
+                alt="people thinking"
+                // onclick
+                // Link
+                // to="/PrepareCard"
+              />
 
-      {/* card 1 */}
-      <Card sx={{ maxWidth: 200 }}>
-       
-        <CardMedia
-          component="img"
-          height="140"
-          img
-          src={thinking}
-          alt="people thinking"
-          onclick={'./Preparing.js'}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Prepare your Relationship
-          </Typography>
-        </CardContent>
-        
-      </Card>
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Prepare your Relationship
+                </Typography>
+              </CardContent>
+            </Card>
+          </CardActionArea>
+        </TableRow>
+      </Container>
+      <Container>
+        <TableRow>
+          {/* card 2 */}
+          {/* <CardActionArea
+              onclick={"/PrepareCard"}          
+            > 
+           
+            <Card sx={{ maxWidth: 200 }}>
+              <CardMedia
+                component="img"
+                height="140"
+                img
+                src={DollarPhoto}
+                alt="Goal Setting"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Goal Setting
+                </Typography>
+              </CardContent>
+            </Card>
+            </CardActionArea> */}
+        </TableRow>
+      </Container>
 
-{/* card 2 */}
-      {/* <Card sx={{ maxWidth: 200 }}>
-        <CardMedia
-          component="img"
-          height="140"
-          img
-          src={DollarPhoto}
-          alt="Goal Setting"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Goal Setting
-          </Typography>
-        </CardContent>
-      </Card> */}
-
-{/* card 3 */}
+      {/* card 3 */}
 
       {/* <Card sx={{ maxWidth: 200 }}>
         <CardMedia
@@ -69,7 +88,7 @@ export default function MediaCard() {
         </CardContent>
       </Card> */}
 
-{/* card 4*/}
+      {/* card 4*/}
 
       {/* <Card sx={{ maxWidth: 200 }}>
         <CardMedia
@@ -86,7 +105,7 @@ export default function MediaCard() {
         </CardContent>
       </Card> */}
 
-{/* card 5 */}
+      {/* card 5 */}
 
       {/* <Card sx={{ maxWidth: 200 }}>
         <CardMedia
@@ -103,7 +122,7 @@ export default function MediaCard() {
         </CardContent>
       </Card> */}
 
-{/* card 6 */}
+      {/* card 6 */}
 
       {/* <Card sx={{ maxWidth: 200 }}>
         <CardMedia
@@ -119,6 +138,9 @@ export default function MediaCard() {
           </Typography>
         </CardContent>
       </Card> */}
-    </CardActionArea>
+      {/* </CardActionArea>
+        </TableRow>
+      </Container> */}
+    </div>
   );
 }

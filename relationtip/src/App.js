@@ -1,8 +1,12 @@
 import "./App.css";
-// import GoalCard from './component/Pages/Goal';
+import GoalCard from "./component/Pages/Goal";
 import MediaCard from "./component/Pages/Home";
-// import ButtonAppBar from './component/NavBar';
+import ButtonAppBar from "./component/TopBar";
 import heart from "./component/Images/heart.jpg";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import PrepareCard from "./component/Pages/Preparing";
+import BreakCard from "./component/Pages/Breakup";
+
 
 function App() {
   return (
@@ -10,9 +14,18 @@ function App() {
       className="landing-wrapper"
       style={{ backgroundImage: `url (${heart})` }}
     >
-      {/* <ButtonAppBar /> */}
-      <MediaCard />
-      {/* <GoalCard /> */}
+      <Router>
+        <ButtonAppBar />
+        <Switch>
+          <Route exact path="/" component={MediaCard} />
+          <Route exact path="/Preparing" component={PrepareCard} />
+          <Route exact path="/Goal" component={GoalCard} />
+          <Route exact path="/Breakup" component={BreakCard} />
+
+          {/* <MediaCard /> */}
+          {/* <GoalCard /> */}
+        </Switch>
+      </Router>
     </div>
   );
 }

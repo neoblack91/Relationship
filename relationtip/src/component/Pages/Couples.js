@@ -9,12 +9,9 @@ import Sliding from "../Images/SlidingVsDeciding.jpg";
 // import DollarPhoto from "./Images/DollarPhoto.jpg";
 // import BreakUp from "./Images/how-to-break-up.jpg"
 
-
-
 export default function CouplesCard() {
   return (
     <CardActionArea>
-
       {/* card 1 */}
       <Card sx={{ maxWidth: 200 }}>
         <CardMedia
@@ -23,7 +20,6 @@ export default function CouplesCard() {
           img
           src={Sliding}
           alt="people thinking"
-          
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -32,7 +28,7 @@ export default function CouplesCard() {
         </CardContent>
       </Card>
 
-{/* card 2 */}
+      {/* card 2 */}
       {/* <Card sx={{ maxWidth: 200 }}>
         <CardMedia
           component="img"
@@ -48,7 +44,7 @@ export default function CouplesCard() {
         </CardContent>
       </Card> */}
 
-{/* card 3 */}
+      {/* card 3 */}
       {/* <Card sx={{ maxWidth: 200 }}>
         <CardMedia
           component="img"
@@ -63,7 +59,6 @@ export default function CouplesCard() {
           </Typography>
         </CardContent>
       </Card> */}
-
     </CardActionArea>
   );
 }
