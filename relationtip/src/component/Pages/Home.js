@@ -9,7 +9,7 @@ import { Container, TableRow } from "@mui/material";
 import thinking from "../Images/thinking.jpg";
 import heart from "../Images/heart.jpg";
 // import Link  from "react-router-dom";
-import DollarPhoto from "../Images/DollarPhoto.jpg";
+// import DollarPhoto from "../Images/DollarPhoto.jpg";
 // import BreakUp from "../Images/how-to-break-up.jpg"
 // import Dating from "../Images/dating.jpg"
 // import Couples from "../Images/couples.jpg"
