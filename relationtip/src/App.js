@@ -1,6 +1,6 @@
 import "./App.css";
 import GoalCard from "./component/Pages/Goal";
-import MediaCard from "./component/Pages/home/Home";
+import MediaCard from "./component/Pages/Home/index";
 import ButtonAppBar from "./component/TopBar";
 // import heart from "./component/Images/heart.jpg";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";

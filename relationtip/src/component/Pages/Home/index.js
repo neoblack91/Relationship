@@ -105,7 +105,7 @@ import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import "./images.css";
+import "./styles.css";
 export default function MediaCard() {
   return (
     <ImageList  sx={{ width: 500, height: 450 }} cols={2} rowHeight={160}>
