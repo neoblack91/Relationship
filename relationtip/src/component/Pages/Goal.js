@@ -1,69 +1,105 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import CardActionArea from "@mui/material/CardActionArea";
-// import "image.css";
-import Sliding from "../Images/SlidingVsDeciding.jpg";
-// import DollarPhoto from "./Images/DollarPhoto.jpg";
-// import BreakUp from "./Images/how-to-break-up.jpg"
+// import * as React from "react";
+// import Card from "@mui/material/Card";
+// import CardContent from "@mui/material/CardContent";
+// import CardMedia from "@mui/material/CardMedia";
+// import Typography from "@mui/material/Typography";
+// // import CardActionArea from "@mui/material/CardActionArea";
+// // import "image.css";
+// import Love from "../Images/lovecouple.jpeg"
+// import Cgoal from "../Images/4-communication-goals-for-2020-1.jpg";
+// import Between from "../Images/8-differences-between-dating-and-being-in-a-relationship.jpg";
+// import DollarPhoto from "../Images/DollarPhoto.jpg";
+// import Future from "../Images/PR_Career_Goals.jpg";
+// import { ImageList } from "@material-ui/core";
 
 
 
-export default function GoalCard() {
-  return (
-    <CardActionArea>
+// export default function GoalCard() {
+//   return (
 
-      {/* card 1 */}
-      <Card sx={{ maxWidth: 200 }}>
-        <CardMedia
-          component="img"
-          height="140"
-          img
-          src={Sliding}
-          alt="people thinking"
+//     <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={160}>
+
+//       {/* card 1 */}
+//       <Card sx={{ maxWidth: 200 }}>
+//         <CardMedia
+//           component="img"
+//           height="140"
+//           img
+//           src={DollarPhoto}
+//           alt="Goal"
           
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Sliding Vs Deciding
-          </Typography>
-        </CardContent>
-      </Card>
+//         />
+//         <CardContent>
+//           <Typography gutterBottom variant="h5" component="div">
+//             Goal
+//           </Typography>
+//         </CardContent>
+//       </Card>
 
-{/* card 2 */}
-      {/* <Card sx={{ maxWidth: 200 }}>
-        <CardMedia
-          component="img"
-          height="140"
-          img
-          src={DollarPhoto}
-          alt="Goal Setting"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Goal Setting
-          </Typography>
-        </CardContent>
-      </Card> */}
+// {/* card 2 */}
+// <Card sx={{ maxWidth: 200 }}>
+//         <CardMedia
+//           component="img"
+//           height="140"
+//           img
+//           src={Love}
+//           alt="Love"
+//         />
+//         <CardContent>
+//           <Typography gutterBottom variant="h5" component="div">
+//             Love
+//           </Typography>
+//         </CardContent>
+//       </Card>
+//       {/* card 3 */}
 
-{/* card 3 */}
-      {/* <Card sx={{ maxWidth: 200 }}>
-        <CardMedia
-          component="img"
-          height="140"
-          img
-          src={BreakUp}
-          alt="Break Up"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Break Up
-          </Typography>
-        </CardContent>
-      </Card> */}
+//       <Card sx={{ maxWidth: 200 }}>
+//         <CardMedia
+//           component="img"
+//           height="140"
+//           img
+//           src={Cgoal}
+//           alt="talk"
+//         />
+//         <CardContent>
+//           <Typography gutterBottom variant="h5" component="div">
+//             Communication
+//           </Typography>
+//         </CardContent>
+//       </Card>
 
-    </CardActionArea>
-  );
-}
+// {/* card 4 */}
+//       <Card sx={{ maxWidth: 200 }}>
+//         <CardMedia
+//           component="img"
+//           height="140"
+//           img
+//           src={Between}
+//           alt="between"
+//         />
+//         <CardContent>
+//           <Typography gutterBottom variant="h5" component="div">
+//             The In Between
+//           </Typography>
+//         </CardContent>
+//       </Card>
+
+//       {/* card 5 */}
+//       <Card sx={{ maxWidth: 200 }}>
+//         <CardMedia
+//           component="img"
+//           height="140"
+//           img
+//           src={Future}
+//           alt="Break Up"
+//         />
+//         <CardContent>
+//           <Typography gutterBottom variant="h5" component="div">
+//             Future
+//           </Typography>
+//         </CardContent>
+//       </Card>
+
+//     </ImageList>
+//   );
+// }
