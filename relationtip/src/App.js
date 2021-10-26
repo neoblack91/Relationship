@@ -1,11 +1,12 @@
 import "./App.css";
-import GoalCard from "./component/Pages/Goal";
+import GoalCard from "./component/Pages/Goal/index.js";
 import MediaCard from "./component/Pages/Home/index";
 import ButtonAppBar from "./component/TopBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import PrepareCard from "./component/Pages/Preparing";
-import BreakCard from "./component/Pages/Breakup";
-import DatingCard from "./component/Pages/Dating";
+import PrepareCard from "./component/Pages/Preparing/index.js";
+import BreakCard from "./component/Pages/Breakup/index.js";
+import DatingCard from "./component/Pages/Dating/index.js";
+import CoupleCard from "./component/Pages/Couple/index.js";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route exact path="/Goal/index.js" component={GoalCard} />
           <Route exact path="/Breakup/index.js" component={BreakCard} />
           <Route exact path="/Dating/index.js" component={DatingCard} />
+          <Route exact path="/Couple/index.js" component={CoupleCard} />
+
         </Switch>
       </Router>
     </div>

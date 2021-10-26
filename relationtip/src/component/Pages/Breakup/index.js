@@ -1,64 +1,53 @@
-// import * as React from "react";
-// import Card from "@mui/material/Card";
-// import CardContent from "@mui/material/CardContent";
-// import CardMedia from "@mui/material/CardMedia";
-// import Typography from "@mui/material/Typography";
-// import CardActionArea from "@mui/material/CardActionArea";
-// // import "image.css";
-// import Sliding from "../Images/SlidingVsDeciding.jpg";
-// // import DollarPhoto from "./Images/DollarPhoto.jpg";
-// // import BreakUp from "./Images/how-to-break-up.jpg"
+import React from "react";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
+import "./Break.css";
 
-// export default function BreakCard() {
-//   return (
-//     <CardActionArea>
-//       {/* card 1 */}
-//       <Card sx={{ maxWidth: 200 }}>
-//         <CardMedia
-//         component="img"
-//         height="140"
-//         img
-//         src={Sliding}
-//         alt="people thinking"
-//         />
-//         <CardContent>
-//           <Typography gutterBottom variant="h5" component="div">
-//             Sliding Vs Deciding
-//           </Typography>
-//         </CardContent>
-//       </Card>
+export default function DatingCard() {
+  return (
+    <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={160}>
+      {itemData.map((item) => (
+        <ImageListItem key={item.img}>
+          <a href={item.URL}>
+            <img
+              src={`${item.img}`}
+              srcSet={`${item.img}`}
+              alt={item.title}
+              loading="lazy"
+              className="pic"
+            />
+          </a>
+          <ImageListItemBar
+            title={item.title}
+            // subtitle={<span>by: {item.author}</span>}
+            position="below"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
+  );
+}
 
-//       {/* card 2 */}
-//       {/* <Card sx={{ maxWidth: 200 }}>
-//         <CardMedia
-//           component="img"
-//           height="140"
-//           img
-//           src={DollarPhoto}
-//           alt="Goal Setting"
-//         />
-//         <CardContent>
-//           <Typography gutterBottom variant="h5" component="div">
-//             Goal Setting
-//           </Typography>
-//         </CardContent>
-//       </Card> */}
-
-//       {/* card 3 */}
-//       {/* <Card sx={{ maxWidth: 200 }}>
-//         <CardMedia
-//           component="img"
-//           height="140"
-//           img
-//           src={BreakUp}
-//           alt="Break Up"
-//         />
-//         <CardContent>
-//           <Typography gutterBottom variant="h5" component="div">
-//             Break Up
-//           </Typography>
-//         </CardContent>
-//       </Card> */}
-//     </CardActionArea>
-//   );
-// }
+const itemData = [
+  {
+    img: "../assets/images/travel2.jpg",
+    title: "How to move on?",
+    // URL: "./Preparing.js",
+  },
+  {
+    img: "../assets/images/next.jpg",
+    title: "Whats Next?",
+    // URL: "./Goal.js",
+  },
+  {
+    img: "../assets/images/why.jpg",
+    title: "Why?!",
+    // URL: "./Breakup.js",
+  },
+  {
+    img: "../assets/images/giving-emotional-support.jpg",
+    title: "Support",
+    // URL: "./Dating.js",
+  },
+];

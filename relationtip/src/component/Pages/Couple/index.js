@@ -4,7 +4,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./styles.css";
 
-export default function PrepareCard() {
+export default function CoupleCard() {
   return (
     <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={160}>
       {itemData.map((item) => (
@@ -18,11 +18,7 @@ export default function PrepareCard() {
               className="pic"
             />
           </a>
-          <ImageListItemBar
-            title={item.title}
-            // subtitle={<span>by: {item.author}</span>}
-            position="below"
-          />
+          <ImageListItemBar title={item.title} position="below" />
         </ImageListItem>
       ))}
     </ImageList>
@@ -31,24 +27,23 @@ export default function PrepareCard() {
 
 const itemData = [
   {
-    img: "../assets/images/lovecouple.jpeg",
-    title: "Find Yourself",
+    img: "../assets/images/couplegames.jpg",
+    title: "Couple Games?",
     // URL: "./Preparing.js",
   },
   {
-    img: "../assets/images/ways-to-improve-emotional-support-in-your-relationship.jpg",
-    title: "Emotional Safety",
+    img: "../assets/images/couple-talking.jpg",
+    title: "Communication?",
     // URL: "./Goal.js",
   },
-  {
-    img: "../assets/images/companionship-relationship.jpg",
-    title: "Why companionship?",
-    // URL: "./Breakup.js",
-  },
-  {
-    img: "../assets/images/couples.jpg",
-    title: "Being a Couple",
-    URL: "/Couple/index.js",
-  },
+  // {
+  //   img: "../assets/images/why.jpg",
+  //   title: "Why?!",
+  //   // URL: "./Breakup.js",
+  // },
+  // {
+  //   img: "../assets/images/giving-emotional-support.jpg",
+  //   title: "Support",
+  //   // URL: "./Dating.js",
+  // },
 ];
-
