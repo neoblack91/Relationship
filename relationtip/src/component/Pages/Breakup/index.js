@@ -4,9 +4,10 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./Break.css";
 
-export default function DatingCard() {
+export default function BreakCard() {
   return (
-    <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={160}>
+    <div className= "breakUpColor">
+    <ImageList >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <a href={item.URL}>
@@ -17,15 +18,17 @@ export default function DatingCard() {
               loading="lazy"
               className="pic"
             />
+            
           </a>
           <ImageListItemBar
             title={item.title}
-            // subtitle={<span>by: {item.author}</span>}
+            
             position="below"
           />
         </ImageListItem>
       ))}
     </ImageList>
+    </div>
   );
 }
 

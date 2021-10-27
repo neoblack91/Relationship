@@ -6,7 +6,8 @@ import "./styles.css";
 
 export default function DatingCard() {
   return (
-    <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={160}>
+    <div className="dateColor">
+    <ImageList>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <a href={item.URL}>
@@ -15,17 +16,14 @@ export default function DatingCard() {
               srcSet={`${item.img}`}
               alt={item.title}
               loading="lazy"
-              className="pic"
+              className={("pic", "responsive")}
             />
           </a>
-          <ImageListItemBar
-            title={item.title}
-            // subtitle={<span>by: {item.author}</span>}
-            position="below"
-          />
+          <ImageListItemBar title={item.title} position="below" />
         </ImageListItem>
       ))}
     </ImageList>
+     </div>
   );
 }
 

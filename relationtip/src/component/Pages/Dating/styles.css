@@ -1,9 +1,10 @@
 .pic {
-  width: 150px;
+  width: 200px;
+  height: 150px;
 }
 
 .responsive {
-  padding: 0 9px;
+  padding: 0 6px;
   float: left;
   width: 24.99999%;
 }
@@ -11,7 +12,7 @@
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
-    margin: 10px 0;
+    margin: 6px 0;
   }
 }
 
@@ -21,6 +22,6 @@
   }
 }
 
-.body {
-  background-color: yellow;
+.dateColor{
+  background-color: pink;
 }

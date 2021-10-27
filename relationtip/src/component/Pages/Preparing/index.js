@@ -6,26 +6,28 @@ import "./styles.css";
 
 export default function PrepareCard() {
   return (
-    <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={160}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <a href={item.URL}>
-            <img
-              src={`${item.img}`}
-              srcSet={`${item.img}`}
-              alt={item.title}
-              loading="lazy"
-              className="pic"
+    <div className="prepareColor">
+      <ImageList>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <a href={item.URL}>
+              <img
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+                loading="lazy"
+                className="pic"
+              />
+            </a>
+            <ImageListItemBar
+              title={item.title}
+              // subtitle={<span>by: {item.author}</span>}
+              position="below"
             />
-          </a>
-          <ImageListItemBar
-            title={item.title}
-            // subtitle={<span>by: {item.author}</span>}
-            position="below"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </div>
   );
 }
 
@@ -51,4 +53,3 @@ const itemData = [
     URL: "/Couple/index.js",
   },
 ];
-

@@ -1,6 +1,11 @@
-/* .pic {
-  width: 150px;
+/* .homeColor:target {
+  background-color: red;
+} */
+.pic {
+  width: 200px;
+  height: 150px;
 }
+
 .responsive {
   padding: 0 6px;
   float: left;
@@ -16,9 +21,10 @@
 
 @media only screen and (max-width: 500px) {
   .responsive {
-    width: 80%;
+    width: 100%;
   }
 }
-.body {
-  background-color: yellow;
-} */
+
+.homeColor {
+  background-color: red;
+}

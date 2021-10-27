@@ -2,12 +2,12 @@ import React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import "./styles.css";
+import "./goal.css";
 
 export default function GoalCard() {
   return (
-    <ImageList  sx={{ width: 500, height: 450 }} cols={2} rowHeight={160}>
-      
+    <div className="goalColor">
+    <ImageList >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <a href={item.URL}>
@@ -16,17 +16,14 @@ export default function GoalCard() {
               srcSet={`${item.img}`}
               alt={item.title}
               loading="lazy"
-              className= "pic"
+              className="pic"              
             />
           </a>
-          <ImageListItemBar
-            title={item.title}
-            // subtitle={<span>by: {item.author}</span>}
-            position="below"
-          />
+          <ImageListItemBar title={item.title} position="below" />
         </ImageListItem>
       ))}
     </ImageList>
+    </div>
   );
 }
 

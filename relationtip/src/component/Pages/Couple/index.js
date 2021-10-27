@@ -6,22 +6,24 @@ import "./styles.css";
 
 export default function CoupleCard() {
   return (
-    <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={160}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <a href={item.URL}>
-            <img
-              src={`${item.img}`}
-              srcSet={`${item.img}`}
-              alt={item.title}
-              loading="lazy"
-              className="pic"
-            />
-          </a>
-          <ImageListItemBar title={item.title} position="below" />
-        </ImageListItem>
-      ))}
-    </ImageList>
+    <div className="coupleColor">
+      <ImageList>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <a href={item.URL}>
+              <img
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+                loading="lazy"
+                className="pic"
+              />
+            </a>
+            <ImageListItemBar title={item.title} position="below" />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </div>
   );
 }
 
