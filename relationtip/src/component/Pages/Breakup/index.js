@@ -3,10 +3,18 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./Break.css";
+import  Container  from '@mui/material/Container';
+
 
 export default function BreakCard() {
+
   return (
-    <div className= "breakUpColor">
+    < Container maxWidth="sm"
+    className="breakUpColor"
+    // style={{ backgroundcolor: "black" }}
+    >
+      
+    {/* <div className= "breakUpColor"> */}
     <ImageList >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -28,7 +36,8 @@ export default function BreakCard() {
         </ImageListItem>
       ))}
     </ImageList>
-    </div>
+    {/* </div> */}
+    </Container>
   );
 }
 
