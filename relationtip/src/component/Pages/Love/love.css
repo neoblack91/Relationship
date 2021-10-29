@@ -2,11 +2,10 @@
   background-color: black;
 } */
 .pic {
-  width: 200px;
-  height: 150px;
+  width: 150px;
 }
 
-/* .responsive {
+.responsive {
   padding: 0 9px;
   float: left;
   width: 24.99999%;
@@ -23,15 +22,15 @@
   .responsive {
     width: 100%;
   }
-} */
+}
 
 .breakUpColor {
- background-image:url("blackroses.jpg");
+ /* background-image:url("blackroses.jpg"); */
  width: max-content;
  height: fit-content;
  /* opacity: 0.5; */
  
 }
-item.title{
+.ImageListItemBar title{
   color:red ;
 }

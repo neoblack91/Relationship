@@ -2,7 +2,7 @@ import React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import "./styles.css";
+import "./Prepare.css";
 
 export default function PrepareCard() {
   return (
@@ -19,11 +19,7 @@ export default function PrepareCard() {
                 className="pic"
               />
             </a>
-            <ImageListItemBar
-              title={item.title}
-              // subtitle={<span>by: {item.author}</span>}
-              position="below"
-            />
+            <ImageListItemBar title={item.title} position="below" />
           </ImageListItem>
         ))}
       </ImageList>

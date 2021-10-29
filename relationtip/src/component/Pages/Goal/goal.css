@@ -1,0 +1,26 @@
+.pic {
+  width: 150px;
+}
+
+.responsive {
+  padding: 0 9px;
+  float: center;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.goalColor {
+  background-color: greenyellow
+}
