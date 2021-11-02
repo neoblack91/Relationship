@@ -7,22 +7,22 @@ import "./goal.css";
 export default function GoalCard() {
   return (
     <div className="goalColor">
-    <ImageList >
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <a href={item.URL}>
-            <img
-              src={`${item.img}`}
-              srcSet={`${item.img}`}
-              alt={item.title}
-              loading="lazy"
-              className="pic"              
-            />
-          </a>
-          <ImageListItemBar title={item.title} position="below" />
-        </ImageListItem>
-      ))}
-    </ImageList>
+      <ImageList>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <a href={item.URL}>
+              <img
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+                loading="lazy"
+                className="pic"
+              />
+            </a>
+            <ImageListItemBar title={item.title} position="below" />
+          </ImageListItem>
+        ))}
+      </ImageList>
     </div>
   );
 }
@@ -30,17 +30,17 @@ export default function GoalCard() {
 const itemData = [
   {
     img: "../assets/images/Dollarphoto.jpg",
-    title: "Goal",
+    // title: "Goal",
     // URL: "./Preparing.js",
   },
   {
-    img: "../assets/images/lovecouple.jpeg",
-    title: "Love",
+    img: "../assets/images/love.png",
+    // title: "Love",
     // URL: "./Goal.js",
   },
   {
     img: "../assets/images/4-communication-goals-for-2020-1.jpg",
-    title: "Communication",
+    // title: "Communication",
     // URL: "./Breakup.js",
   },
   {

@@ -31,12 +31,12 @@ const itemData = [
   {
     img: "../assets/images/Japanese-Hill-and-Pond-Garden-Brooklyn-Botanic-Gar.png",
     // title: "Date Night Activities",
-    // URL: "./Preparing.js",
+    // URL: "./Datenight/index.js",
   },
   {
     img: "../assets/images/firstdate.png",
     // title: "First Date Tips",
-    // URL: "./Goal.js",
+    URL: "../Datenight/index.js",
   },
   {
     img: "../assets/images/man-arm-around-woman.png",

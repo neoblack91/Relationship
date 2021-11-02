@@ -8,6 +8,7 @@ import BreakCard from "./component/Pages/Breakup/index.js";
 import DatingCard from "./component/Pages/Dating/index.js";
 import CoupleCard from "./component/Pages/Couple/index.js";
 import Container from "@mui/material/Container";
+import DNTCard from "./component/Pages/Datenight/index.js";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
             <Route exact path="/Breakup/index.js" component={BreakCard} />
             <Route exact path="/Dating/index.js" component={DatingCard} />
             <Route exact path="/Couple/index.js" component={CoupleCard} />
+            <Route exact path="/Datenight/index.js" component={DNTCard} />
+            
           </Switch>
         </Router>
       </Container>

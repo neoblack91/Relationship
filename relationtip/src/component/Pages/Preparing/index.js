@@ -29,22 +29,22 @@ export default function PrepareCard() {
 
 const itemData = [
   {
-    img: "../assets/images/lovecouple.jpeg",
-    title: "Find Yourself",
+    img: "../assets/images/nature-person.png",
+    // title: "Find Yourself",
     // URL: "./Preparing.js",
   },
   {
-    img: "../assets/images/ways-to-improve-emotional-support-in-your-relationship.jpg",
-    title: "Emotional Safety",
+    img: "../assets/images/emotions.png",
+    // title: "Emotional Safety",
     // URL: "./Goal.js",
   },
   {
-    img: "../assets/images/companionship-relationship.jpg",
-    title: "Why companionship?",
+    img: "../assets/images/companion.png",
+    // title: "Why companionship?",
     // URL: "./Breakup.js",
   },
   {
-    img: "../assets/images/couples.jpg",
+    img: "../assets/images/couple.png",
     title: "Being a Couple",
     URL: "/Couple/index.js",
   },
