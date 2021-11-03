@@ -29,18 +29,18 @@ export default function MediaCard() {
 
 const itemData = [
   {
-    img: "./assets/images/thinking.jpg",
-    title: "Preparing for a Relationship",
+    img: "./assets/images/preparing.png",
+    // title: "Preparing for a Relationship",
     URL: "./Preparing/index.js",
   },
   {
     img: "./assets/images/DollarPhoto.jpg",
-    title: "Goal",
+    // title: "Goal",
     URL: "./Goal/index.js",
   },
   {
-    img: "./assets/images/how-to-break-up.jpg",
-    title: "Break Up",
+    img: "./assets/images/breakup.png",
+    // title: "Break Up",
     URL: "./Breakup/index.js",
   },
   {

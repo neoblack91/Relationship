@@ -1,7 +1,7 @@
 import React from "react";
-import "./styles.css";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
+import "./styles.css";
 
 export default function DNTCard() {
   return (
@@ -9,7 +9,7 @@ export default function DNTCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia component="img" className="pic" />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5">
             Date Night Tips
           </Typography>
         </CardContent>

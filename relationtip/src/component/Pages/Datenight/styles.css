@@ -1,7 +1,7 @@
 .pic {
   width: 200px;
   height: 150px;
-  background-image: url('couples.jpg');
+  background-image: url("couples.jpg");
 }
 
 .responsive {
@@ -23,6 +23,6 @@
   }
 }
 
-.dnColor{
-  background-image:url("roseswp18.jpg");
+.dnColor {
+  background-image: url("roseswp18.jpg");
 }

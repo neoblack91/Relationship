@@ -9,6 +9,7 @@ import DatingCard from "./component/Pages/Dating/index.js";
 import CoupleCard from "./component/Pages/Couple/index.js";
 import Container from "@mui/material/Container";
 import DNTCard from "./component/Pages/Datenight/index.js";
+import ActivitiesCard from "./component/Pages/Activities";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/Dating/index.js" component={DatingCard} />
             <Route exact path="/Couple/index.js" component={CoupleCard} />
             <Route exact path="/Datenight/index.js" component={DNTCard} />
+            <Route exact path="/Activities/index.js" component={ActivitiesCard} />
             
           </Switch>
         </Router>

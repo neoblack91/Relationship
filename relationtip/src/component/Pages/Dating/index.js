@@ -31,7 +31,7 @@ const itemData = [
   {
     img: "../assets/images/Japanese-Hill-and-Pond-Garden-Brooklyn-Botanic-Gar.png",
     // title: "Date Night Activities",
-    // URL: "./Datenight/index.js",
+    URL: "../Activities/index.js",
   },
   {
     img: "../assets/images/firstdate.png",
