@@ -44,13 +44,13 @@ const itemData = [
     // URL: "./Breakup.js",
   },
   {
-    img: "../assets/images//8-differences-between-dating-and-being-in-a-relationship.jpg",
-    title: "The In Between",
+    img: "../assets/images/between.png",
+    // title: "The In Between",
     // URL: "./Dating.js",
   },
   {
-    img: "../assets/images/PR_Career_Goals.jpg",
-    title: "Future",
+    img: "../assets/images/PR_Career_Goals.png",
+    // title: "Future",
     // URL: "./Dating.js",
   },
 ];

@@ -16,7 +16,7 @@ export default function MediaCard() {
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 alt={item.title}
                 loading="lazy"
-                className={("pic","responsive")}
+                className={("pic", "responsive")}
               />
             </a>
             <ImageListItemBar title={item.title} position="below" />
@@ -44,8 +44,8 @@ const itemData = [
     URL: "./Breakup/index.js",
   },
   {
-    img: "./assets/images/dating.jpg",
-    title: "Dating",
+    img: "./assets/images/dating.png",
+    // title: "Dating",
     URL: "./Dating/index.js",
   },
 ];

@@ -45,7 +45,7 @@ const itemData = [
   },
   {
     img: "../assets/images/couple.png",
-    title: "Being a Couple",
+    // title: "Being a Couple",
     URL: "/Couple/index.js",
   },
 ];
