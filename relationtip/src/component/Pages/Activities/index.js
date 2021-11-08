@@ -10,7 +10,7 @@ export default function ActivitiesCard() {
         <CardMedia component="img" className="pic" />
         <CardContent>
           <Typography gutterBottom variant="h5">
-          Date Night Activities
+            Date Night Activities
           </Typography>
         </CardContent>
       </Card>
@@ -93,7 +93,6 @@ export default function ActivitiesCard() {
           </Typography>
         </CardContent>
       </Card>
-
     </div>
   );
 }

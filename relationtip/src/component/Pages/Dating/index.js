@@ -46,11 +46,11 @@ const itemData = [
   {
     img: "../assets/images/dealing.jpg",
     // title: "Dealing with Stress",
-    // URL: "./Dating.js",
+    URL: "../Stress/index.js",
   },
   {
     img: "../assets/images/danger.png",
     // title: "Communication Danger Signs(Dating)",
-    // URL: "./Dating.js",
+     URL: "../Communication/index.js",
   },
 ];

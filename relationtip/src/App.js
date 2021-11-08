@@ -10,6 +10,8 @@ import CoupleCard from "./component/Pages/Couple/index.js";
 import Container from "@mui/material/Container";
 import DNTCard from "./component/Pages/Datenight/index.js";
 import ActivitiesCard from "./component/Pages/Activities";
+import StressCard from "./component/Pages/Stress";
+import ComCard from "./component/Pages/Communication";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route exact path="/Couple/index.js" component={CoupleCard} />
             <Route exact path="/Datenight/index.js" component={DNTCard} />
             <Route exact path="/Activities/index.js" component={ActivitiesCard} />
+            <Route exact path="/Stress/index.js" component={StressCard} />
+            <Route exact path="/Communication/index.js" component={ComCard} />
             
           </Switch>
         </Router>
