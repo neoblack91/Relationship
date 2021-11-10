@@ -31,26 +31,26 @@ const itemData = [
   {
     img: "../assets/images/Dollarphoto.jpg",
     // title: "Goal",
-    URL: "../GoalDate/index.js",
+    URL: "../GoalDate",
   },
   {
     img: "../assets/images/love.png",
     // title: "Love",
-    URL: "../Love/index.js",
+    URL: "../Love",
   },
   {
     img: "../assets/images/4-communication-goals-for-2020-1.jpg",
     // title: "Communication",
-    URL: "../ComGoal/index.js",
+    URL: "../ComGoal",
   },
   {
     img: "../assets/images/between.png",
     // title: "The In Between",
-    URL: "../Between/index.js",
+    URL: "../Between",
   },
   {
     img: "../assets/images/PR_Career_Goals.png",
     // title: "Future",
-    URL: "../Future/index.js",
+    URL: "../Future",
   },
 ];

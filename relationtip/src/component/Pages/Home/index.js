@@ -31,21 +31,21 @@ const itemData = [
   {
     img: "./assets/images/preparing.png",
     // title: "Preparing for a Relationship",
-    URL: "./Preparing/index.js",
+    URL: "./Preparing",
   },
   {
     img: "./assets/images/DollarPhoto.jpg",
     // title: "Goal",
-    URL: "./Goal/index.js",
+    URL: "./Goal",
   },
   {
     img: "./assets/images/breakup.png",
     // title: "Break Up",
-    URL: "./Breakup/index.js",
+    URL: "./Breakup",
   },
   {
     img: "./assets/images/dating.png",
     // title: "Dating",
-    URL: "./Dating/index.js",
+    URL: "./Dating",
   },
 ];

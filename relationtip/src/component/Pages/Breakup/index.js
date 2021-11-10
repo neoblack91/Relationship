@@ -34,21 +34,21 @@ const itemData = [
   {
     img: "../assets/images/how.png",
     // title: "How to move on?",
-    // URL: "./Preparing.js",
+    URL: "../Moveon",
   },
   {
     img: "../assets/images/next.jpg",
     // title: "Whats Next?",
-    // URL: "./Goal.js",
+    URL: "../Whatsnext",
   },
   {
     img: "../assets/images/why.png",
     // title: "Why?!",
-    // URL: "./Breakup.js",
+    URL: "../Why",
   },
   {
     img: "../assets/images/Support.png",
     // title: "Support",
-    // URL: "./Dating.js",
+    URL: "../Support",
   },
 ];

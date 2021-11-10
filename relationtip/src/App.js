@@ -17,6 +17,10 @@ import comGCard from "./component/Pages/ComGoal";
 import fCard from "./component/Pages/Future";
 import betCard from "./component/Pages/Between";
 import GdCard from "./component/Pages/GoalDate";
+import moCard from "./component/Pages/Moveon";
+import whatsNext from "./component/Pages/Whatsnext";
+import Why from "./component/Pages/Why";
+import Support from "./component/Pages/Support";
 
 function App() {
   return (
@@ -26,21 +30,24 @@ function App() {
           <ButtonAppBar />
           <Switch>
             <Route exact path="/" component={MediaCard} />
-            <Route exact path="/Preparing/index.js" component={PrepareCard} />
-            <Route exact path="/Goal/index.js" component={GoalCard} />
-            <Route exact path="/Breakup/index.js" component={BreakCard} />
-            <Route exact path="/Dating/index.js" component={DatingCard} />
-            <Route exact path="/Couple/index.js" component={CoupleCard} />
-            <Route exact path="/Datenight/index.js" component={DNTCard} />
-            <Route exact path="/Activities/index.js" component={ActivitiesCard} />
-            <Route exact path="/Stress/index.js" component={StressCard} />
-            <Route exact path="/Communication/index.js" component={ComCard} />
-            <Route exact path="/Love/index.js" component={loveCard} />
-            <Route exact path="/ComGoal/index.js" component={comGCard} />
-            <Route exact path="/Future/index.js" component={fCard} />
-            <Route exact path="/Between/index.js" component={betCard} />
-            <Route exact path="/GoalDate/index.js" component={GdCard} />
-            
+            <Route exact path="/Preparing" component={PrepareCard} />
+            <Route exact path="/Goal" component={GoalCard} />
+            <Route exact path="/Breakup" component={BreakCard} />
+            <Route exact path="/Dating" component={DatingCard} />
+            <Route exact path="/Couple" component={CoupleCard} />
+            <Route exact path="/Datenight" component={DNTCard} />
+            <Route exact path="/Activities" component={ActivitiesCard} />
+            <Route exact path="/Stress" component={StressCard} />
+            <Route exact path="/Communication" component={ComCard} />
+            <Route exact path="/Love" component={loveCard} />
+            <Route exact path="/ComGoal" component={comGCard} />
+            <Route exact path="/Future" component={fCard} />
+            <Route exact path="/Between" component={betCard} />
+            <Route exact path="/Moveon" component={moCard} />
+            <Route exact path="/GoalDate" component={GdCard} />
+            <Route exact path="/Whatsnext" component={whatsNext} />
+            <Route exact path="/Why" component={Why} />
+            <Route exact path="/Support" component={Support} />
           </Switch>
         </Router>
       </Container>

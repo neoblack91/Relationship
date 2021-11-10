@@ -31,22 +31,22 @@ const itemData = [
   {
     img: "../assets/images/Japanese-Hill-and-Pond-Garden-Brooklyn-Botanic-Gar.png",
     // title: "Date Night Activities",
-    URL: "../Activities/index.js",
+    URL: "../Activities",
   },
   {
     img: "../assets/images/firstdate.png",
     // title: "First Date Tips",
-    URL: "../Datenight/index.js",
+    URL: "../Datenight",
   },
 
   {
     img: "../assets/images/dealing.jpg",
     // title: "Dealing with Stress",
-    URL: "../Stress/index.js",
+    URL: "../Stress",
   },
   {
     img: "../assets/images/danger.png",
     // title: "Communication Danger Signs(Dating)",
-    URL: "../Communication/index.js",
+    URL: "../Communication",
   },
 ];
