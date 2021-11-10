@@ -1,8 +1,6 @@
-/* .Container{
-  background-color: black;
-} */
 .pic {
   width: 150px;
+
 }
 
 .responsive {
@@ -24,13 +22,6 @@
   }
 }
 
-.breakUpColor {
- /* background-image:url("blackroses.jpg"); */
- width: max-content;
- height: fit-content;
- /* opacity: 0.5; */
- 
-}
-.ImageListItemBar title{
-  color:red ;
+.lColor {
+  background-image: url("orange.jpg")
 }

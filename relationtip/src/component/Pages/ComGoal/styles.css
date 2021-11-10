@@ -1,7 +1,7 @@
 .pic {
   width: 200px;
   height: 150px;
-  /* background-image: url("Japanese-Hill-and-Pond-Garden-Brooklyn-Botanic-Gar.png"); */
+  background-image: url("danger.png");
 }
 
 .responsive {
@@ -23,6 +23,6 @@
   }
 }
 
-.dnColor {
-  background-image: url("roseswp18.jpg");
+.ComColor {
+  background-image: url("orange.jpg");
 }

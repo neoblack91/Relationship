@@ -1,16 +1,16 @@
 import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
-import "./love.css";
+import "./styles.css";
 
-export default function loveCard() {
+export default function fCard() {
   return (
-    <div className="lColor">
-      <Card>
+    <div className="fColor">
+      <Card sx={{ maxWidth: 345 }}>
         <CardMedia component="img" className="pic" />
         <CardContent>
           <Typography gutterBottom variant="h5">
-            Love
+            Future (Goal)
           </Typography>
         </CardContent>
       </Card>
@@ -18,7 +18,7 @@ export default function loveCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            1. Work on you
+            1. Address your Personal issues
           </Typography>
         </CardContent>
       </Card>
@@ -26,7 +26,7 @@ export default function loveCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            2. Start as friends
+            2. Work on you
           </Typography>
         </CardContent>
       </Card>
@@ -34,7 +34,15 @@ export default function loveCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            3.Learn how to love
+            3. Learn how to love
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            4. Develop monthly goals
           </Typography>
         </CardContent>
       </Card>

@@ -16,7 +16,7 @@ export default function DatingCard() {
                 srcSet={`${item.img}`}
                 alt={item.title}
                 loading="lazy"
-                className={("pic", "responsive")}
+                className={"pic"}
               />
             </a>
             <ImageListItemBar title={item.title} position="below" />
@@ -38,11 +38,7 @@ const itemData = [
     // title: "First Date Tips",
     URL: "../Datenight/index.js",
   },
-  {
-    img: "../assets/images/man-arm-around-woman.png",
-    // title: "All About Dating",
-    // URL: "./Breakup.js",
-  },
+
   {
     img: "../assets/images/dealing.jpg",
     // title: "Dealing with Stress",
@@ -51,6 +47,6 @@ const itemData = [
   {
     img: "../assets/images/danger.png",
     // title: "Communication Danger Signs(Dating)",
-     URL: "../Communication/index.js",
+    URL: "../Communication/index.js",
   },
 ];

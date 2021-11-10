@@ -3,15 +3,20 @@ import GoalCard from "./component/Pages/Goal/index.js";
 import MediaCard from "./component/Pages/Home/index";
 import ButtonAppBar from "./component/TopBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import PrepareCard from "./component/Pages/Preparing/index.js";
-import BreakCard from "./component/Pages/Breakup/index.js";
-import DatingCard from "./component/Pages/Dating/index.js";
-import CoupleCard from "./component/Pages/Couple/index.js";
+import PrepareCard from "./component/Pages/Preparing";
+import BreakCard from "./component/Pages/Breakup";
+import DatingCard from "./component/Pages/Dating";
+import CoupleCard from "./component/Pages/Couple";
 import Container from "@mui/material/Container";
-import DNTCard from "./component/Pages/Datenight/index.js";
+import DNTCard from "./component/Pages/Datenight";
 import ActivitiesCard from "./component/Pages/Activities";
 import StressCard from "./component/Pages/Stress";
 import ComCard from "./component/Pages/Communication";
+import loveCard from "./component/Pages/Love";
+import comGCard from "./component/Pages/ComGoal";
+import fCard from "./component/Pages/Future";
+import betCard from "./component/Pages/Between";
+import GdCard from "./component/Pages/GoalDate";
 
 function App() {
   return (
@@ -30,6 +35,11 @@ function App() {
             <Route exact path="/Activities/index.js" component={ActivitiesCard} />
             <Route exact path="/Stress/index.js" component={StressCard} />
             <Route exact path="/Communication/index.js" component={ComCard} />
+            <Route exact path="/Love/index.js" component={loveCard} />
+            <Route exact path="/ComGoal/index.js" component={comGCard} />
+            <Route exact path="/Future/index.js" component={fCard} />
+            <Route exact path="/Between/index.js" component={betCard} />
+            <Route exact path="/GoalDate/index.js" component={GdCard} />
             
           </Switch>
         </Router>
