@@ -1,16 +1,16 @@
 import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
-import "./couple.css";
+import "./yourself.css";
 
-export default function couple() {
+export default function Yourself() {
   return (
-    <div className="coupleColor">
+    <div className="yColor">
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia component="img" className="pic" />
         <CardContent>
           <Typography gutterBottom variant="h5">
-            Being a couple
+            Finding Yourself
           </Typography>
         </CardContent>
       </Card>
@@ -18,8 +18,7 @@ export default function couple() {
       <Card sx={{ maxWidth: 345 }}>
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            1. Being a couple is is great if you follow the steps in the goal
-            section
+            1.Getting to know you is important
           </Typography>
         </CardContent>
       </Card>

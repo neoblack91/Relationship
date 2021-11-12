@@ -31,21 +31,21 @@ const itemData = [
   {
     img: "../assets/images/nature-person.png",
     // title: "Find Yourself",
-    // URL: "./Preparing.js",
+    URL: "./Yourself",
   },
   {
     img: "../assets/images/emotions.png",
     // title: "Emotional Safety",
-    // URL: "./Goal.js",
+    URL: "./Emotion",
   },
   {
     img: "../assets/images/companion.png",
     // title: "Why companionship?",
-    // URL: "./Breakup.js",
+    URL: "./Companion",
   },
   {
     img: "../assets/images/couple.png",
     // title: "Being a Couple",
-    URL: "/Couple/index.js",
+    URL: "./Couple",
   },
 ];

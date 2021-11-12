@@ -1,7 +1,6 @@
 import "./App.css";
 import GoalCard from "./component/Pages/Goal/index.js";
 import MediaCard from "./component/Pages/Home/index";
-import ButtonAppBar from "./component/TopBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PrepareCard from "./component/Pages/Preparing";
 import BreakCard from "./component/Pages/Breakup";
@@ -21,6 +20,10 @@ import moCard from "./component/Pages/Moveon";
 import whatsNext from "./component/Pages/Whatsnext";
 import Why from "./component/Pages/Why";
 import Support from "./component/Pages/Support";
+import emotion from "./component/Pages/Emotional";
+import Yourself from "./component/Pages/Yourself";
+import Companion from "./component/Pages/Companion";
+import ButtonAppBar from "./component/topbar/TopBar";
 
 function App() {
   return (
@@ -48,6 +51,9 @@ function App() {
             <Route exact path="/Whatsnext" component={whatsNext} />
             <Route exact path="/Why" component={Why} />
             <Route exact path="/Support" component={Support} />
+            <Route exact path="/Emotion" component={emotion} />
+            <Route exact path="/Yourself" component={Yourself} />
+            <Route exact path="/Companion" component={Companion} />
           </Switch>
         </Router>
       </Container>

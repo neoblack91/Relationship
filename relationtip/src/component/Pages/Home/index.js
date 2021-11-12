@@ -16,7 +16,7 @@ export default function MediaCard() {
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 alt={item.title}
                 loading="lazy"
-                className={("pic", "responsive")}
+                className={`pic responsive`}
               />
             </a>
             <ImageListItemBar title={item.title} position="below" />
@@ -34,9 +34,9 @@ const itemData = [
     URL: "./Preparing",
   },
   {
-    img: "./assets/images/DollarPhoto.jpg",
-    // title: "Goal",
-    URL: "./Goal",
+    img: "./assets/images/dating.png",
+    // title: "Dating",
+    URL: "./Dating",
   },
   {
     img: "./assets/images/breakup.png",
@@ -44,8 +44,8 @@ const itemData = [
     URL: "./Breakup",
   },
   {
-    img: "./assets/images/dating.png",
-    // title: "Dating",
-    URL: "./Dating",
+    img: "./assets/images/DollarPhoto.jpg",
+    // title: "Goal",
+    URL: "./Goal",
   },
 ];
