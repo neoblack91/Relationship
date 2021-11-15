@@ -29,7 +29,7 @@ export default function DatingCard() {
 
 const itemData = [
   {
-    img: "../assets/images/Japanese-Hill-and-Pond-Garden-Brooklyn-Botanic-Gar.png",
+    img: "../assets/images/datenight.png",
     // title: "Date Night Activities",
     URL: "../Activities",
   },

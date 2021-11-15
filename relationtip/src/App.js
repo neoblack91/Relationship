@@ -12,7 +12,6 @@ import ActivitiesCard from "./component/Pages/Activities";
 import StressCard from "./component/Pages/Stress";
 import ComCard from "./component/Pages/Communication";
 import loveCard from "./component/Pages/Love";
-import comGCard from "./component/Pages/ComGoal";
 import fCard from "./component/Pages/Future";
 import betCard from "./component/Pages/Between";
 import GdCard from "./component/Pages/GoalDate";
@@ -24,6 +23,7 @@ import emotion from "./component/Pages/Emotional";
 import Yourself from "./component/Pages/Yourself";
 import Companion from "./component/Pages/Companion";
 import ButtonAppBar from "./component/topbar/TopBar";
+import comG from "./component/Pages/ComGoal";
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
             <Route exact path="/Stress" component={StressCard} />
             <Route exact path="/Communication" component={ComCard} />
             <Route exact path="/Love" component={loveCard} />
-            <Route exact path="/ComGoal" component={comGCard} />
+            <Route exact path="/ComGoal" component={comG} />
             <Route exact path="/Future" component={fCard} />
             <Route exact path="/Between" component={betCard} />
             <Route exact path="/Moveon" component={moCard} />

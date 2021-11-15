@@ -3,14 +3,14 @@ import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
 
-export default function comGCard() {
+export default function comG() {
   return (
     <div className="ComColor">
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia component="img" className="pic" />
         <CardContent>
           <Typography gutterBottom variant="h5">
-            Communication (Goal)
+            Positive Communication
           </Typography>
         </CardContent>
       </Card>

@@ -29,7 +29,7 @@ export default function PrepareCard() {
 
 const itemData = [
   {
-    img: "../assets/images/nature-person.png",
+    img: "../assets/images/yourself.png",
     // title: "Find Yourself",
     URL: "./Yourself",
   },

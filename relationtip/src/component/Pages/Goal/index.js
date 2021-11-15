@@ -29,28 +29,28 @@ export default function GoalCard() {
 
 const itemData = [
   {
-    img: "../assets/images/Dollarphoto.jpg",
+    img: "../assets/images/goal.png",
     // title: "Goal",
-    URL: "../GoalDate",
+    URL: "./GoalDate",
   },
   {
     img: "../assets/images/love.png",
     // title: "Love",
-    URL: "../Love",
+    URL: "./Love",
   },
   {
-    img: "../assets/images/4-communication-goals-for-2020-1.jpg",
+    img: "../assets/images/communication.png",
     // title: "Communication",
-    URL: "../ComGoal",
+    URL: "./ComGoal",
   },
   {
     img: "../assets/images/between.png",
     // title: "The In Between",
-    URL: "../Between",
+    URL: "./Between",
   },
   {
-    img: "../assets/images/PR_Career_Goals.png",
+    img: "../assets/images/future.png",
     // title: "Future",
-    URL: "../Future",
+    URL: "./Future",
   },
 ];

@@ -5,14 +5,14 @@ import "./styles.css";
 
 export default function DNTCard() {
   // const DateImg = {require (`./couples.jpg`)};
-  const DateImg = {
-    car: require("../Datenight"),
-    // phone: require('../phone.png'),
-  };
+  // const DateImg = {
+  //   car: require("../Datenight"),
+  //   // phone: require('../phone.png'),
+  // };
   return (
     <div className="dnColor">
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia className="pic" Image source={DateImg.car} />
+        <CardMedia />
         <CardContent>
           <Typography gutterBottom variant="h5">
             Date Night Tips

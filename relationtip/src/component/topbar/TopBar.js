@@ -18,7 +18,7 @@ export default function ButtonAppBar() {
            */}
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
-            <h3>TSB Changing Images</h3>
+            <h3>Relationship Guru</h3>
           </Typography>
         </Toolbar>
       </AppBar>

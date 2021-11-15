@@ -37,7 +37,7 @@ const itemData = [
     URL: "../Moveon",
   },
   {
-    img: "../assets/images/next.jpg",
+    img: "../assets/images/whatsnext.png",
     // title: "Whats Next?",
     URL: "../Whatsnext",
   },
