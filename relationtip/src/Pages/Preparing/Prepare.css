@@ -2,9 +2,9 @@
   width: 150px;
   height: 200px;
 }
-.responsive {
+/* .responsive {
   padding: 0 6px;
-  float: left;
+  float: right;
   width: 24.99999%;
 }
 
@@ -19,7 +19,8 @@
   .responsive {
     width: 100%;
   }
-}
+} */
 .prepareColor {
   background-color: yellow;
+  
 }

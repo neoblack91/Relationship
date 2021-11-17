@@ -2,12 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { TipImg } from "../../TipImg";
 
 export default function ActivitiesCard() {
   return (
     <div className="dnColor">
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia component="img" className="pic" />
+        <CardMedia
+          component="img"
+          className="pic"
+          TipImg
+          image="../assets/images/datenight.png"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5">
             Date Night Activities

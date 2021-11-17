@@ -3,12 +3,12 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./Prepare.css";
-// import PBar from "../../topbar/pBar";
+import { NavBar } from "../../component/topbar/TopBar";
 
 export default function PrepareCard() {
-  // <PBar />;
   return (
     <div className="prepareColor">
+      <NavBar title="Preparing for Relationship"></NavBar>
       <ImageList>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>

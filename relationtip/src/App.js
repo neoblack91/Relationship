@@ -1,36 +1,34 @@
 import "./App.css";
-import GoalCard from "./component/Pages/Goal/index.js";
-import MediaCard from "./component/Pages/Home/index";
+import GoalCard from "./Pages/Goal";
+import MediaCard from "./Pages/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import PrepareCard from "./component/Pages/Preparing";
-import BreakCard from "./component/Pages/Breakup";
-import DatingCard from "./component/Pages/Dating";
-import CoupleCard from "./component/Pages/Couple";
+import PrepareCard from "./Pages/Preparing";
+import BreakCard from "./Pages/Breakup";
+import DatingCard from "./Pages/Dating";
+import CoupleCard from "./component/Cards/Couple";
 import Container from "@mui/material/Container";
-import DNTCard from "./component/Pages/Datenight";
-import ActivitiesCard from "./component/Pages/Activities";
-import StressCard from "./component/Pages/Stress";
-import ComCard from "./component/Pages/Communication";
-import loveCard from "./component/Pages/Love";
-import fCard from "./component/Pages/Future";
-import betCard from "./component/Pages/Between";
-import GdCard from "./component/Pages/GoalDate";
-import moCard from "./component/Pages/Moveon";
-import whatsNext from "./component/Pages/Whatsnext";
-import Why from "./component/Pages/Why";
-import Support from "./component/Pages/Support";
-import emotion from "./component/Pages/Emotional";
-import Yourself from "./component/Pages/Yourself";
-import Companion from "./component/Pages/Companion";
-import ButtonAppBar from "./component/topbar/TopBar";
-import comG from "./component/Pages/ComGoal";
+import DNTCard from "./component/Cards/Datenight";
+import ActivitiesCard from "./component/Cards/Activities";
+import StressCard from "./component/Cards/Stress";
+import ComCard from "./component/Cards/Communication";
+import loveCard from "./component/Cards/Love";
+import fCard from "./component/Cards/Future";
+import betCard from "./component/Cards/Between";
+import GdCard from "./component/Cards/GoalDate";
+import moCard from "./component/Cards/Moveon";
+import whatsNext from "./component/Cards/Whatsnext";
+import Why from "./component/Cards/Why";
+import Support from "./component/Cards/Support";
+import emotion from "./component/Cards/Emotional";
+import Yourself from "./component/Cards/Yourself";
+import Companion from "./component/Cards/Companion";
+import comG from "./component/Cards/ComGoal";
 
 function App() {
   return (
     <div>
-      <Container maxWidth="sm" maxHeight="md">
+      <Container>
         <Router>
-          <ButtonAppBar />
           <Switch>
             <Route exact path="/" component={MediaCard} />
             <Route exact path="/Preparing" component={PrepareCard} />

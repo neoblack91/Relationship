@@ -7,21 +7,23 @@ import Typography from "@mui/material/Typography";
 // import { Item } from "./back";
 import "./top.css";
 
-export default function ButtonAppBar() {
+export const NavBar = ({ title }) => {
   return (
-    <Box sx={{ flexGrow: 2 }}>
-      <AppBar position="static">
-        <Toolbar>
-          {/* <i class="fas fa-arrow-circle-left"variant="contained" color="primary"> 
+    <div>
+      <Box sx={{ flexGrow: 2 }}>
+        <AppBar position="static">
+          <Toolbar>
+            {/* <i class="fas fa-arrow-circle-left"variant="contained" color="primary"> 
             Back
           </i>
            */}
 
-          <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
-            <h3>Relationship Guru</h3>
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </Box>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
+              <h3> {title}</h3>
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </Box>
+    </div>
   );
-}
+};

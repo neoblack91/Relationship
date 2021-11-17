@@ -3,10 +3,12 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./styles.css";
+import { NavBar } from "../../component/topbar/TopBar";
 
 export default function MediaCard() {
   return (
     <div className="homeColor" target="homeColor">
+      <NavBar title="Relationship Guru"></NavBar>
       <ImageList>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
@@ -16,7 +18,7 @@ export default function MediaCard() {
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 alt={item.title}
                 loading="lazy"
-                className={`pic responsive`}
+                className="pic"
               />
             </a>
             <ImageListItemBar title={item.title} position="below" />

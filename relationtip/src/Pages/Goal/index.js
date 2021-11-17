@@ -3,10 +3,12 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./goal.css";
+import { NavBar } from "../../component/topbar/TopBar";
 
 export default function GoalCard() {
   return (
     <div className="goalColor">
+      <NavBar title="Goal Setting"></NavBar>
       <ImageList>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>

@@ -3,10 +3,12 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./styles.css";
+import { NavBar } from "../../component/topbar/TopBar";
 
 export default function DatingCard() {
   return (
     <div className="dateColor">
+      <NavBar title="Dating"></NavBar>
       <ImageList>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
