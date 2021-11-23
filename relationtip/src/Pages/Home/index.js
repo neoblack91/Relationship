@@ -46,7 +46,7 @@ const itemData = [
     URL: "./Breakup",
   },
   {
-    img: "./assets/images/DollarPhoto.jpg",
+    img: "./assets/images/goal.png",
     // title: "Goal",
     URL: "./Goal",
   },

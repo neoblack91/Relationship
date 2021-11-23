@@ -5,9 +5,13 @@ import "./styles.css";
 
 export default function ComCard() {
   return (
-    <div className="ComColor">
+    <div className="Com">
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia component="img" className="pic" />
+        <CardMedia
+          component="img"
+          className="pic"
+          image="../assets/images/danger.png"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5">
             4 Communication Danger Signs
@@ -46,6 +50,18 @@ export default function ComCard() {
           <Typography variant="body2" color="text.secondary">
             4. Withdrawal- Unwillingness to get into or stay with important
             discussion
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            If you would like a session please visit our site:
+            <br></br>
+            <a href="https://www.tsbchangingimageswithcoaching.com/">
+              TSB Changing Images
+            </a>
           </Typography>
         </CardContent>
       </Card>

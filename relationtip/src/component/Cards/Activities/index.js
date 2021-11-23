@@ -2,7 +2,6 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
-import { TipImg } from "../../TipImg";
 
 export default function ActivitiesCard() {
   return (
@@ -11,7 +10,6 @@ export default function ActivitiesCard() {
         <CardMedia
           component="img"
           className="pic"
-          TipImg
           image="../assets/images/datenight.png"
         />
         <CardContent>
@@ -96,6 +94,18 @@ export default function ActivitiesCard() {
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             10. Car Ride
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            If you would like a session please visit our site:
+            <br></br>
+            <a href="https://www.tsbchangingimageswithcoaching.com/">
+              TSB Changing Images
+            </a>
           </Typography>
         </CardContent>
       </Card>

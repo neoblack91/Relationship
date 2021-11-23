@@ -6,8 +6,12 @@ import "./styles.css";
 export default function StressCard() {
   return (
     <div className="SColor">
-      <Card>
-        <CardMedia component="img" className="pic" />
+      <Card sx={{ maxWidth: 345 }}>
+        <CardMedia
+          component="img"
+          className="pic"
+          image="../assets/images/dealing.jpg"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5">
             Dealing with Stress
@@ -43,6 +47,18 @@ export default function StressCard() {
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             4. Use Conflict Resolution
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            If you would like a session please visit our site:
+            <br></br>
+            <a href="https://www.tsbchangingimageswithcoaching.com/">
+              TSB Changing Images
+            </a>
           </Typography>
         </CardContent>
       </Card>

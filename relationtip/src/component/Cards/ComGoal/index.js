@@ -7,7 +7,11 @@ export default function comG() {
   return (
     <div className="ComColor">
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia component="img" className="pic" />
+        <CardMedia
+          component="img"
+          className="pic"
+          image="../assets/images/communication.png"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5">
             Positive Communication
@@ -67,6 +71,18 @@ export default function comG() {
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             7. Always smile and be encouraging
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            If you would like a session please visit our site:
+            <br></br>
+            <a href="https://www.tsbchangingimageswithcoaching.com/">
+              TSB Changing Images
+            </a>
           </Typography>
         </CardContent>
       </Card>

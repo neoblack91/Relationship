@@ -8,9 +8,9 @@ import { NavBar } from "../../component/topbar/TopBar";
 
 export default function BreakCard() {
   return (
-    <div>
+    <div className="breakUpColor">
       <NavBar title="Break Up"></NavBar>
-      <Container maxWidth="sm" className="breakUpColor">
+      <Container maxWidth="sm" maxheight="lg">
         <ImageList>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>

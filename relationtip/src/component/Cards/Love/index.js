@@ -7,7 +7,11 @@ export default function loveCard() {
   return (
     <div className="lColor">
       <Card>
-        <CardMedia component="img" className="pic" />
+        <CardMedia
+          component="img"
+          className="pic"
+          image="../assets/images/love.png"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5">
             Love
@@ -35,6 +39,18 @@ export default function loveCard() {
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             3.Learn how to love
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            If you would like a session please visit our site:
+            <br></br>
+            <a href="https://www.tsbchangingimageswithcoaching.com/">
+              TSB Changing Images
+            </a>
           </Typography>
         </CardContent>
       </Card>

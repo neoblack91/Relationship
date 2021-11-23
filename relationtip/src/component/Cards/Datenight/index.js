@@ -4,18 +4,17 @@ import { Card } from "@mui/material";
 import "./styles.css";
 
 export default function DNTCard() {
-  // const DateImg = {require (`./couples.jpg`)};
-  // const DateImg = {
-  //   car: require("../Datenight"),
-  //   // phone: require('../phone.png'),
-  // };
   return (
     <div className="dnColor">
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia />
+        <CardMedia
+          component="img"
+          className="pic"
+          image="../assets/images/firstdate.png"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5">
-            Date Night Tips
+            First Date
           </Typography>
         </CardContent>
       </Card>
@@ -47,6 +46,18 @@ export default function DNTCard() {
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             4. Leave your baggage at the door!
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            If you would like a session please visit our site:
+            <br></br>
+            <a href="https://www.tsbchangingimageswithcoaching.com/">
+              TSB Changing Images
+            </a>
           </Typography>
         </CardContent>
       </Card>

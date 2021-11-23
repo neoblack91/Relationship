@@ -24,3 +24,6 @@
 .goalColor {
   background-color: green;
 }
+.container {
+  columns: 3;
+}

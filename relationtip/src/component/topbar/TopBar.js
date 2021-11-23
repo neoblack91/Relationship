@@ -3,9 +3,9 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-// import Button from '@material-ui/core/Button'
-// import { Item } from "./back";
 import "./top.css";
+import { Button } from "@mui/material";
+// import BackButton from "../back";
 
 export const NavBar = ({ title }) => {
   return (
@@ -13,11 +13,10 @@ export const NavBar = ({ title }) => {
       <Box sx={{ flexGrow: 2 }}>
         <AppBar position="static">
           <Toolbar>
-            {/* <i class="fas fa-arrow-circle-left"variant="contained" color="primary"> 
-            Back
-          </i>
-           */}
-
+            <Button variant="contained" component="span">
+              Back
+            </Button>
+            {/* <BackButton /> */}
             <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
               <h3> {title}</h3>
             </Typography>
