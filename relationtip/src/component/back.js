@@ -1,11 +1,16 @@
-// import React from "React";
-// import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 
-// export default function BackButton() {
-//   const history = useHistory();
-//   return (
-//     <div>
-//       <button onClick={history.goBack}>Go Back</button>
-//     </div>
-//   );
-// }
+function BackButton() {
+  let history = useHistory();
+
+  function handleClick() {
+    history.goBack("/");
+  }
+
+  return (
+    <button type="button" onClick={handleClick}>
+      Back
+    </button>
+  );
+}
+export default BackButton;

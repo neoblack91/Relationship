@@ -4,19 +4,23 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import "./top.css";
-import { Button } from "@mui/material";
-// import BackButton from "../back";
+
+import BackButton from "../back";
+
 
 export const NavBar = ({ title }) => {
   return (
     <div>
-      <Box sx={{ flexGrow: 2 }}>
+      <Box >
         <AppBar position="static">
           <Toolbar>
-            <Button variant="contained" component="span">
+            {/* <Button variant="contained" component="span">
               Back
-            </Button>
-            {/* <BackButton /> */}
+            </Button> */}
+            <BackButton />
+            <br></br>
+            <br></br>
+            <br></br>
             <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
               <h3> {title}</h3>
             </Typography>
