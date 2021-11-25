@@ -5,6 +5,7 @@ import "./styles.css";
 
 export default function ActivitiesCard() {
   return (
+    
     <div className="dnColor">
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
@@ -109,6 +110,8 @@ export default function ActivitiesCard() {
           </Typography>
         </CardContent>
       </Card>
+      
     </div>
+    
   );
 }

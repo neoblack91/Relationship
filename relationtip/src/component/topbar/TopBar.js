@@ -9,14 +9,14 @@ import BackButton from "../back";
 
 
 export const NavBar = ({ title }) => {
+  
   return (
+    
     <div>
       <Box >
         <AppBar position="static">
           <Toolbar>
-            {/* <Button variant="contained" component="span">
-              Back
-            </Button> */}
+            
             <BackButton />
             <br></br>
             <br></br>
