@@ -2,18 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./Companion.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function Companion() {
-  const { ComImg } = "./assets/images/companion.png";
   return (
     <div className="comColor">
+      <NavBar title="Why Companionship"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia component={ComImg} className="pic" />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            Why Companionship
-          </Typography>
-        </CardContent>
+        <CardMedia
+          component="img"
+          className="pic"
+          image="../assets/images/companion.png"
+        />
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

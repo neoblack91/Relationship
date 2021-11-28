@@ -2,21 +2,23 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function betCard() {
   return (
     <div className="betColor">
+      <NavBar title="The In Between"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/between.png"
         />
-        <CardContent>
+        {/* <CardContent>
           <Typography gutterBottom variant="h5">
             The in Between
           </Typography>
-        </CardContent>
+        </CardContent> */}
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

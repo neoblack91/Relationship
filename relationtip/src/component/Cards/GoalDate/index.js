@@ -2,21 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function GdCard() {
   return (
     <div className="gColor">
+      <NavBar title="Goal (Dating)"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/goal.png"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            Goal (Dating)
-          </Typography>
-        </CardContent>
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

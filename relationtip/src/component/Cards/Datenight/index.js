@@ -2,21 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function DNTCard() {
   return (
     <div className="dnColor">
+      <NavBar title="First Date"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/firstdate.png"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            First Date
-          </Typography>
-        </CardContent>
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

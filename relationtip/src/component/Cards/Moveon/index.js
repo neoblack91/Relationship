@@ -2,21 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function moCard() {
   return (
     <div className="mColor">
+      <NavBar title="How to move on"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/how.png"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            How to move on
-          </Typography>
-        </CardContent>
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

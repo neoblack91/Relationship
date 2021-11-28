@@ -2,21 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function fCard() {
   return (
     <div className="fColor">
+      <NavBar title="Future (Goal)"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/future.png"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            Future (Goal)
-          </Typography>
-        </CardContent>
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>
@@ -61,7 +58,6 @@ export default function fCard() {
           </Typography>
         </CardContent>
       </Card>
-      {/* <i class="fas fa-heart"></i> */}
     </div>
   );
 }

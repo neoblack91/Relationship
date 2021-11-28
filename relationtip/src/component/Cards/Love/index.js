@@ -2,21 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./love.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function loveCard() {
   return (
     <div className="lColor">
+      <NavBar title="Love"></NavBar>
       <Card>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/love.png"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            Love
-          </Typography>
-        </CardContent>
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

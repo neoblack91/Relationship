@@ -2,21 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function Why() {
   return (
     <div className="wColor">
       <Card sx={{ maxWidth: 345 }}>
+        <NavBar title="Why?!"></NavBar>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/why.png"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            Why?!
-          </Typography>
-        </CardContent>
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

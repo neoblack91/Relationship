@@ -2,17 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./yourself.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function Yourself() {
   return (
     <div className="yColor">
+      <NavBar title="Finding Yourself"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia component="img" className="pic" />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            Finding Yourself
-          </Typography>
-        </CardContent>
+        <CardMedia
+          component="img"
+          className="pic"
+          image="../assets/images/yourself.png"
+        />
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

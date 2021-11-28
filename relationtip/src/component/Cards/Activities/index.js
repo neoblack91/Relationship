@@ -2,22 +2,24 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function ActivitiesCard() {
   return (
-    
     <div className="dnColor">
+      <NavBar title="Date Night Activities"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/datenight.png"
         />
-        <CardContent>
+
+        {/* <CardContent>
           <Typography gutterBottom variant="h5">
             Date Night Activities
           </Typography>
-        </CardContent>
+        </CardContent> */}
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>
@@ -27,6 +29,7 @@ export default function ActivitiesCard() {
           </Typography>
         </CardContent>
       </Card>
+
       <Card sx={{ maxWidth: 345 }}>
         <CardContent>
           <Typography variant="body2" color="text.secondary">
@@ -110,8 +113,6 @@ export default function ActivitiesCard() {
           </Typography>
         </CardContent>
       </Card>
-      
     </div>
-    
   );
 }

@@ -2,21 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./styles.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function StressCard() {
   return (
     <div className="SColor">
       <Card sx={{ maxWidth: 345 }}>
+        <NavBar title="Dealing with Stress"></NavBar>
         <CardMedia
           component="img"
           className="pic"
           image="../assets/images/dealing.jpg"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5">
-            Dealing with Stress
-          </Typography>
-        </CardContent>
       </Card>
 
       <Card sx={{ maxWidth: 345 }}>

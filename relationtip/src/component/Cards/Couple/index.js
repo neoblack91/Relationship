@@ -2,12 +2,18 @@ import React from "react";
 import { CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Card } from "@mui/material";
 import "./couple.css";
+import { NavBar } from "../../topbar/TopBar";
 
 export default function couple() {
   return (
     <div className="coupleColor">
+      <NavBar title="Being a Couple"></NavBar>
       <Card sx={{ maxWidth: 345 }}>
-        <CardMedia component="img" className="pic" />
+        <CardMedia
+          component="img"
+          className="pic"
+          image="../assets/images/couple.png"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5">
             Being a couple
