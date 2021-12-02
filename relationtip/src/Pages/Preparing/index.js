@@ -4,11 +4,13 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./Prepare.css";
 import { NavBar } from "../../component/topbar/TopBar";
+import { Container } from "@mui/material";
 
 export default function PrepareCard() {
   return (
     <div className="prepareColor">
       <NavBar title="Preparing for Relationship"></NavBar>
+      <Container maxWidth="sm" maxheight="lg">
       <ImageList>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
@@ -25,6 +27,7 @@ export default function PrepareCard() {
           </ImageListItem>
         ))}
       </ImageList>
+      </Container> 
     </div>
   );
 }

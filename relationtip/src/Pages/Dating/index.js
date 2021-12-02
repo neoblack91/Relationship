@@ -4,27 +4,30 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./styles.css";
 import { NavBar } from "../../component/topbar/TopBar";
+import { Container } from "@mui/material";
 
 export default function DatingCard() {
   return (
     <div className="dateColor">
       <NavBar title="Dating"></NavBar>
-      <ImageList>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <a href={item.URL}>
-              <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
-                loading="lazy"
-                className={"pic"}
-              />
-            </a>
-            <ImageListItemBar title={item.title} position="below" />
-          </ImageListItem>
-        ))}
-      </ImageList>
+      <Container maxWidth="sm" maxheight="lg">
+        <ImageList>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <a href={item.URL}>
+                <img
+                  src={`${item.img}`}
+                  srcSet={`${item.img}`}
+                  alt={item.title}
+                  loading="lazy"
+                  className={"pic"}
+                />
+              </a>
+              <ImageListItemBar title={item.title} position="below" />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </Container>
     </div>
   );
 }

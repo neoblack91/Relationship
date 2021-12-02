@@ -10,27 +10,23 @@ export default function GoalCard() {
   return (
     <div className="goalColor">
       <NavBar title="Goal Setting"></NavBar>
-      <Container>
-        <row>
-          <colunm>
-            <ImageList>
-              {itemData.map((item) => (
-                <ImageListItem key={item.img}>
-                  <a href={item.URL}>
-                    <img
-                      src={`${item.img}`}
-                      srcSet={`${item.img}`}
-                      alt={item.title}
-                      loading="lazy"
-                      className="pic"
-                    />
-                  </a>
-                  <ImageListItemBar title={item.title} position="below" />
-                </ImageListItem>
-              ))}
-            </ImageList>
-          </colunm>
-        </row>
+      <Container maxWidth="sm" maxheight="lg">
+        <ImageList>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <a href={item.URL}>
+                <img
+                  src={`${item.img}`}
+                  srcSet={`${item.img}`}
+                  alt={item.title}
+                  loading="lazy"
+                  className="pic"
+                />
+              </a>
+              <ImageListItemBar title={item.title} position="below" />
+            </ImageListItem>
+          ))}
+        </ImageList>
       </Container>
     </div>
   );
