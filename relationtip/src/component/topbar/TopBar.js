@@ -5,17 +5,18 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import "./top.css";
 import BackButton from "../back";
+import { useLocation } from "react-router-dom";
 
 export const NavBar = ({ title }) => {
+  const location = useLocation();
+
   return (
     <div>
       <Box>
         <AppBar position="static">
           <Toolbar>
-            <BackButton />
-            <br></br>
-            <br></br>
-            <br></br>
+            {location.pathname !== "/" ? <BackButton /> : null}
+
             <Typography variant="h6" component="div">
               <h3> {title}</h3>
             </Typography>

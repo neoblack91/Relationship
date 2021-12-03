@@ -9,12 +9,14 @@ function BackButton() {
   }
 
   return (
-    // <button type="button" onClick={handleClick}>
-    //   Back
-    // </button>
-    <Button variant="contained" component="span" onClick={handleClick} >
-    Back
-  </Button>
+    <Button
+      variant="contained"
+      component="span"
+      style={{ marginRight: "50px" }}
+      onClick={handleClick}
+    >
+      back
+    </Button>
   );
 }
 export default BackButton;
